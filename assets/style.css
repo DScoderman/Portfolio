@@ -1,0 +1,23 @@
+
+header {
+display: block;
+border: 0;
+margin: 0;
+padding: 0;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+    
+}
+
+header nav {
+display: block;
+flex-direction: row;
+
+}
+
+banner
