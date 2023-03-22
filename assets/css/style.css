@@ -1,15 +1,3 @@
-* {
-
-   size: 16;
-}
-
-body {
-display: flex;
-flex-direction: column;
-font-family: sans-serif;
-
-}
-
 header {
     background-color: rgb(171, 179, 186);
     display: flex;
@@ -20,62 +8,119 @@ header {
 }
 
 header h1 {
-color: black;
+    color: black;
     font-size: 300%;
-display:inline-block;
-font-weight: bold;
-margin: 30px;
+    display: inline-block;
+    font-weight: bold;
+    margin: 30px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     min-width: 750px;
- margin-left: 100px;
- font-size: 200%;
-}
-
-h2 {
-color: black;
-    font-size: 300%;
-    margin-left: 200px;
+    margin-left: 100px;
+    font-size: 200%;
+    list-style-type: none;
 }
 
 .banner {
-   background-color: brown;
+    background-color: brown;
     background-image: url("../images/Desert.jpg");
-   box-sizing: content-box;
-   padding-top: 200px;
-   padding-bottom: 200px;
-   
+    box-sizing: content-box;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
-
-footer {
-
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
+#about-me {
+    display: flex
+    }
+    #about-me article {
+    margin-top: 100px;
+        display:flex;
     align-items: center;
-    padding: 1%;
-    color: darkblue
-}
+    margin-bottom: 100px;
+    }
+    #about-me h2{
+    font-size: 300%;
+    margin-left: 200px;
+    flex-basis: 20%;
+    }
+    #about-me p {
+    margin-left: 50px;
+    flex-basis: 80%;
+    }
+    
 
-footer h2 {
-    position: fixed;
-    display: flex-start;
-    justify-content: flex-start;
-    margin-right: 1500px;
-}
-footer nav ul{ 
-color: black;
+main {
+
     display: flex;
-    justify-content: space-between;
-    min-width: 500px;
- margin-left: 300px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-@media screen and (max-width:992px){
-   .banner {
-    width:75%;
+main h2 {
+    font-size: 250%;
+    padding-right: 15px;
+    margin-left: 50px;
+    text-align: right;
 }
+
+aside {
+    flex: 0 0 20%;
+    border-right: 3px solid #97bbdb;
+}
+
+.work-section {
+    flex: 0 0 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 1000px;
+}
+
+.small-work-section {
+
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.big-photos {
+    flex: 0 0 100%;
+
+}
+
+.big-photos img {
+    width: 100%;
+
+}
+
+
+
+.small-photos {
+    flex: 0 0 25%;
+    position: relative;
+}
+
+
+
+.small-photos a {
+    position:absolute;
+    left: 125px;
+    bottom: 116px;
+    background: lightblue;
+    text-align: center;
+}
+
+.small-photos img {
+width: 250px;
+height: 250px;
+margin: 50px;
+padding: 50px;
+box-shadow: 5px lightblue
+}
+
+.project-1 {
+
+    background-image: url(../images/Stone.jpg);
+    width: 500px;
+    height: 500px;
 }
